@@ -19,8 +19,8 @@ public class Teste {
 		Produto caneta = new Produto("Caneta", 0.70, 15);
 		produtos.add(caneta);
 		
-		Double total = Caixa.calcularTotal(ventilador) + Caixa.calcularTotal(computador) + Caixa.calcularTotal(mesa) + Caixa.calcularTotal(caderno) + Caixa.calcularTotal(cadeira) + Caixa.calcularTotal(caneta);
+		String total = Caixa.calcularTotal(produtos);
+		System.out.println(produtos);
 		System.out.printf("O valor total foi de R$%s", total);
-		
 	}
 }

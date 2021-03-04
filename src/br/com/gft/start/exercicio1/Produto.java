@@ -38,5 +38,10 @@ public class Produto {
 	public Double calcularValorFinal() {
 		return valor * quantidade * 1.1;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("\tNome: %s\n\tValor: R$%s\n\tQuantidade: %s\n", nome, valor, quantidade) ;
+	}
 
 }
